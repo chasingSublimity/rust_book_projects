@@ -34,6 +34,17 @@ fn main() {
     println!("{}", tup.0);
 
     // array
+    // fixed length, allocated on the stack
     let a = [1,2,3,4,5]; // every element must be same type
+    let b: [i32; 5] = [1,2,3,4,5];
+    println!("a: {}", a[0]);
+    println!("b: {}", b[0]);
 
+    // functions
+    another_function();
+}
+
+
+fn another_function() {
+    println!("Another function!");
 }
